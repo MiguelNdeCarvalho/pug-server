@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  csgo-server:
+    image: "cm2network/csgo"
+    container_name: "csgo-server"
+    environment:
+      - TZ="Europe/Lisbon"
+      - SRCDS_TOKEN="2B7BA81BCEACDD2FB18F8C5E606B3C73"
+      - SRCDS_STARTMAP="de_mirage"
+      - SRCDS_HOSTNAME="Teste Server"
+      - SRCDS_PW="teste1369"
+      - SRCDS_RCONPW="teste1369"
+    network_mode: host
+    volumes:
+      - "/home/mike/csgo:/home/steam/csgo-dedicated/"
+    restart: always

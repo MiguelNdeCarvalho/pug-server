@@ -19,6 +19,6 @@
 {
     "1"
     {
-        "center"		"Servidor configurado por:{green}MiguelNdeCarvalho{default}"
+        "chat"		"Servidor configurado por:{green}MiguelNdeCarvalho{default}"
     }
 }
